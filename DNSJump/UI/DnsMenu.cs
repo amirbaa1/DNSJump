@@ -201,7 +201,7 @@ namespace DNSJump.UI
                         var status = x.OperationalStatus == OperationalStatus.Up
                             ? "[green]▲ UP[/]"
                             : "[red]▼ DOWN[/]";
-                        return $"{status} {x.Description}";
+                        return $"{status} {x.Description} [grey]({x.Name})[/]";
                     }).Append("Back"))
             );
 
